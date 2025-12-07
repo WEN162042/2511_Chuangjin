@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>創今工程｜服務介紹</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
+    <link type="image/png" href="img/favicon/favicon-32x32.png" rel="icon" sizes="32x32" />
+    <link type="image/png" href="img/favicon/favicon-16x16.png" rel="icon" sizes="16x16" />
+    <link type="image/x-icon" href="img/favicon/favicon.ico" rel="icon" sizes="16x16" />
+
+    <!-- tailwind.css -->
+    <link rel="stylesheet" href="css/oz-tailwind.css" />
+    <link rel="stylesheet" href="css/oz-wmy.css" />
+
+    <!-- aos -->
+    <link rel="stylesheet" href="css/aos.css" />
+
+    <!-- swiper.js -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <div id="preloader" class="preloader fixed z-50 left-0 top-0 right-0 bottom-0 bg-white flex justify-center items-center">
+      <div class="loader"></div>
+    </div>
+    <header class="fixed top-5 left-0 w-full z-20">
+      <div class="my-5 2xl:mx-140 md:mx-20 mx-5 flex justify-center">
+        <div class="container relative mx-5 flex justify-between items-center w-full h-full py-4 px-10 bg-white shadow-xl rounded-3xl" x-data="{ showMenu: false } ">
+          <a class="logo block text-center w-45" href="index.html"><img src="img/logo.png" alt="" /></a>
+
+          <!-- mobile -->
+          <div @click="showMenu = !showMenu" class="block text-cj-green hover:brightness-90 cursor-pointer lg:hidden">
+            <i class="text-4xl flex justify-center items-center fi fi-sr-apps"></i>
+          </div>
+
+          <!-- nav -->
+          <div class="justify-center items-start lg:items-center hidden w-full h-auto lg:relative lg:flex" :class="{'flex absolute z-50 left-0 top-30 bg-white/90 backdrop-blur-lg shadow-xl rounded-3xl ': showMenu, 'hidden': !showMenu }">
+            <nav class="flex flex-col justify-center lg:justify-end items-start lg:items-center w-full lg:flex-row justify-items-stretch sm:justity-center sm:items-center">
+              <ul class="nav w-full flex flex-wrap tracking-wider lg:justify-end lg:items-center lg:space-x-6 lg:p-0 p-5 text-xl">
+                <li class="relative lg:w-auto w-full">
+                  <a href="index.html#about" class="block p-3 hover:text-cj-green">公司簡介</a>
+                </li>
+                <li class="relative lg:w-auto w-full">
+                  <a href="service.html" class="block p-3 hover:text-cj-green">服務介紹</a>
+                </li>
+                <li class="relative lg:w-auto w-full">
+                  <a href="projects.html" class="block p-3 hover:text-cj-green">工程實績</a>
+                </li>
+                <li class="relative lg:w-auto w-full">
+                  <a href="contact.html" class="block p-3 hover:text-cj-green">聯絡我們</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="relative mt-35 p-5 overflow-x-clip">
+          <div class="absolute bottom-0 left-1/2 -translate-x-1/2 lg:w-full md:w-500 w-400">
+            <img class="w-full opacity-10" src="img/service/6.png" alt="" />
+          </div>
+
+          <div class="container mx-auto w-full overflow-x-clip mb-30">
+            <div class="flex flex-wrap">
+              <div class="w-full flex flex-wrap">
+                <div class="md:w-1/2 w-full flex md:justify-end items-center md:order-2 order-1 md:mb-0 mb-5" data-aos="flip-up">
+                  <span class="inline-block"
+                    ><a href="index.html"><i class="flex items-center justify-center text-2xl text-gray-400 hover:text-cj-green fi fi-rr-home"></i></a
+                  ></span>
+                  <span class="inline-block px-5 text-gray-400">／</span>
+                  <span class="inline-block text-lg text-gray-400">服務介紹</span>
+                </div>
+                <div class="md:w-1/2 w-full mb-5 md:order-1 order-2" data-aos="flip-up">
+                  <div class="flex items-center md:justify-start justify-center mb-2">
+                    <span class="inline-block w-2 h-2 rounded-full cj-gre mr-2"></span>
+                    <span class="text-xl font-semibold text-cj-green">Service</span>
+                  </div>
+                  <h2 class="md:pl-4 text-5xl font-black md:text-start text-center">服務介紹</h2>
+                </div>
+              </div>
+              <div class="w-full pb-15" data-aos="fade-right" data-aos-delay="500">
+                <span class="block w-full h-px bg-gray-400"></span>
+              </div>
+              <div class="min-h-[324px] lg:w-1/5 md:w-1/2 w-full md:pr-2 mb-5" data-aos="flip-right" data-aos-delay="500">
+                <div class="relative rounded-3xl bg-cj-green p-5 text-white text-2xl font-bold h-full overflow-hidden">
+                  <p class="relative z-2 tracking-wide text-center mb-5">初步需求洽談<br class="md:block hidden" />　</p>
+                  <div class="w-full flex justify-center mb-15 md:mt-0 mt-10">
+                    <img class="h-35 object-center relative z-2" src="img/service/1.png" />
+                  </div>
+                  <p class="absolute bottom-5 right-5 z-2 text-5xl font-black text-white">01</p>
+                  <img class="absolute bottom-0 left-0 object-cover h-full w-full z-1 mix-blend-multiply opacity-50" src="img/102553328_s.jpg" alt="" />
+                </div>
+              </div>
+              <div class="min-h-[324px] lg:w-1/5 md:w-1/2 w-full lg:pr-2 mb-5" data-aos="flip-right" data-aos-delay="700">
+                <div class="relative rounded-3xl bg-cj-mustard p-5 text-white text-2xl font-bold h-full overflow-hidden">
+                  <p class="relative z-2 tracking-wide text-center mb-5">現場勘查<br />規劃與估價</p>
+                  <div class="w-full flex justify-center mb-15">
+                    <img class="h-35 object-center relative z-2" src="img/service/2.png" />
+                  </div>
+
+                  <p class="absolute bottom-5 right-5 z-2 text-5xl font-black text-white">02</p>
+                  <img class="absolute bottom-0 left-0 object-cover h-full w-full z-1 mix-blend-multiply opacity-50" src="img/102553328_s.jpg" alt="" />
+                </div>
+              </div>
+              <div class="min-h-[324px] lg:w-1/5 md:w-1/2 w-full md:pr-2 mb-5" data-aos="flip-right" data-aos-delay="900">
+                <div class="relative rounded-3xl bg-cj-purple p-5 text-white text-2xl font-bold h-full overflow-hidden">
+                  <p class="relative z-2 tracking-wide text-center mb-5">專業拆除作業<br class="md:block hidden" />　</p>
+                  <div class="w-full flex justify-center mb-15 md:mt-5 mt-10">
+                    <img class="h-30 object-center relative z-2" src="img/service/3.png" />
+                  </div>
+                  <p class="absolute bottom-5 right-5 z-2 text-5xl font-black text-white">03</p>
+                  <img class="absolute bottom-0 left-0 object-cover h-full w-full z-1 mix-blend-multiply opacity-50" src="img/102553328_s.jpg" alt="" />
+                </div>
+              </div>
+              <div class="min-h-[324px] lg:w-1/5 md:w-1/2 w-full lg:pr-2 mb-5" data-aos="flip-right" data-aos-delay="1100">
+                <div class="relative rounded-3xl bg-cj-green p-5 text-white text-2xl font-bold h-full overflow-hidden">
+                  <p class="relative z-2 tracking-wide text-center mb-5">廢棄物<br />分類與清運</p>
+                  <div class="w-full flex justify-center mb-15">
+                    <img class="h-35 object-center relative z-2" src="img/service/4.png" />
+                  </div>
+
+                  <p class="absolute bottom-5 right-5 z-2 text-5xl font-black text-white">04</p>
+                  <img class="absolute bottom-0 left-0 object-cover h-full w-full z-1 mix-blend-multiply opacity-50" src="img/102553328_s.jpg" alt="" />
+                </div>
+              </div>
+              <div class="min-h-[324px] lg:w-1/5 md:w-1/2 w-full mb-5" data-aos="flip-right" data-aos-delay="1300">
+                <div class="relative rounded-3xl bg-cj-mustard p-5 text-white text-2xl font-bold h-full overflow-hidden">
+                  <p class="relative z-2 tracking-wide text-center mb-5">工區復原與驗收<br class="md:block hidden" />　</p>
+                  <div class="w-full flex justify-center mb-15 xl:mt-10 lg:mt-0 md:mt-10 mt-15">
+                    <img class="h-25 object-center relative z-2" src="img/service/5.png" />
+                  </div>
+                  <p class="absolute bottom-5 right-5 z-2 text-5xl font-black text-white">05</p>
+                  <img class="absolute bottom-0 left-0 object-cover h-full w-full z-1 mix-blend-multiply opacity-50" src="img/102553328_s.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="bg-gray-800 relative">
+        <div class="absolute z-1 top-0 left-0 inset-0 bg-contain bg-center mix-blend-overlay" style="background-image: url(img/102553328_s.jpg)"></div>
+        <div class="relative z-2 container mx-auto">
+          <div class="flex flex-wrap p-5 py-10">
+            <div class="md:w-1/3 w-full text-white md:mb-0 mb-10">
+              <div class="w-40 md:mx-0 mx-auto">
+                <img class="mb-5" src="img/logo.png" alt="" />
+              </div>
+              <p class="md:pl-3 md:text-2xl font-black md:text-start text-center">
+                <span class="text-cj-green">安全至上</span>、 <span class="text-cj-mustard">效率為先</span>、
+                <span class="text-cj-purple">專業可靠</span>
+              </p>
+            </div>
+            <div class="md:w-1/3 w-full text-white md:pl-5">
+              <p class="md:pl-3 text-2xl font-black mb-5">聯絡方式</p>
+              <p class="md:pl-10 mb-2">電話：0966-621-178</p>
+              <p class="md:pl-10 mb-2">電郵：fchun52@gmail.com</p>
+              <p class="md:pl-10">地址：桃園市龜山區東萬壽路50號9樓</p>
+            </div>
+            <div class="lg:w-55 md:w-50 w-full pl-20 text-white md:block hidden">
+              <img src="img/LINE_QR-Code.jpg" alt="" />
+            </div>
+          </div>
+          <div class="w-full mx-auto pb-2">
+            <div class="px-5 pb-2">
+              <span class="block w-full h-px bg-gray-400"></span>
+            </div>
+            <p class="text-gray-400 text-sm text-center">Copyright © 2025 創今工程. Design by <a class="font-semibold hover:text-cj-purple" href="https://www.ozchamp.com./">OZCHAMP</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- alpine.js -->
+    <script src="js/alpinejs3.12.3.js"></script>
+    <!-- jquery.js -->
+    <script src="js/jquery.js"></script>
+    <!-- main -->
+    <script src="js/main.js"></script>
+    <!-- aos -->
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        duration: 1000,
+        easing: "ease",
+        anchorPlacement: "top-bottom"
+      });
+    </script>
+    <!-- swiper.js -->
+    <script src="js/swiper-bundle.min.js"></script>
+  </body>
+</html>

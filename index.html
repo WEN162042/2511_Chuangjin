@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>創今工程｜首頁</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
+    <link type="image/png" href="img/favicon/favicon-32x32.png" rel="icon" sizes="32x32" />
+    <link type="image/png" href="img/favicon/favicon-16x16.png" rel="icon" sizes="16x16" />
+    <link type="image/x-icon" href="img/favicon/favicon.ico" rel="icon" sizes="16x16" />
+
+    <!-- tailwind.css -->
+    <link rel="stylesheet" href="css/oz-tailwind.css" />
+    <link rel="stylesheet" href="css/oz-wmy.css" />
+
+    <!-- aos -->
+    <link rel="stylesheet" href="css/aos.css" />
+
+    <!-- swiper.js -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <div id="preloader" class="preloader fixed z-50 left-0 top-0 right-0 bottom-0 bg-white flex justify-center items-center">
+      <div class="loader"></div>
+    </div>
+    <header class="fixed top-5 left-0 w-full z-20">
+      <div class="my-5 2xl:mx-140 md:mx-20 mx-5 flex justify-center">
+        <div class="container relative mx-5 flex justify-between items-center w-full h-full py-4 px-10 bg-white shadow-xl rounded-3xl" x-data="{ showMenu: false } ">
+          <a class="logo block text-center w-45" href="index.html"><img src="img/logo.png" alt="" /></a>
+
+          <!-- mobile -->
+          <div @click="showMenu = !showMenu" class="block text-cj-green hover:brightness-90 cursor-pointer lg:hidden">
+            <i class="text-4xl flex justify-center items-center fi fi-sr-apps"></i>
+          </div>
+
+          <!-- nav -->
+          <div class="justify-center items-start lg:items-center hidden w-full h-auto lg:relative lg:flex" :class="{'flex absolute z-50 left-0 top-30 bg-white/90 backdrop-blur-lg shadow-xl rounded-3xl ': showMenu, 'hidden': !showMenu }">
+            <nav class="flex flex-col justify-center lg:justify-end items-start lg:items-center w-full lg:flex-row justify-items-stretch sm:justity-center sm:items-center">
+              <ul class="nav w-full flex flex-wrap tracking-wider lg:justify-end lg:items-center lg:space-x-6 lg:p-0 p-5 text-xl">
+                <li class="relative lg:w-auto w-full">
+                  <a href="index.html#about" class="block p-3 hover:text-cj-green">公司簡介</a>
+                </li>
+                <li class="relative lg:w-auto w-full">
+                  <a href="service.html" class="block p-3 hover:text-cj-green">服務介紹</a>
+                </li>
+                <li class="relative lg:w-auto w-full">
+                  <a href="projects.html" class="block p-3 hover:text-cj-green">工程實績</a>
+                </li>
+                <li class="relative lg:w-auto w-full">
+                  <a href="contact.html" class="block p-3 hover:text-cj-green">聯絡我們</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="h-screen">
+        <div class="p-5 h-full">
+          <div class="container mx-auto rounded-3xl w-full h-full overflow-hidden">
+            <div class="relative w-full h-full bg-center bg-cover" style="background-image: url(img/index-bg.jpg)">
+              <div class="absolute bottom-10 md:top-[50%] md:-translate-y-1/2 left-0 md:p-10 p-5">
+                <span class="block text-5xl md:text-6xl font-black text-white text-shadow-lg/30 mt-8" data-aos="flip-up" data-aos-delay="500">跨越高難度，</span>
+                <span class="block text-5xl md:text-6xl font-black text-white text-shadow-lg/30 my-8" data-aos="flip-down" data-aos-delay="500">我們只做最艱鉅的拆除任務。</span>
+                <div class="inline-block" data-aos="fade-up" data-aos-delay="500">
+                  <a href="contact.html" class="flex items-center justify-center gap-5 md:py-5 py-3 md:px-10 px-8 cj-yel rounded-full text-white font-bold shadow-lg/30 transform duration-150 hover:scale-105">
+                    <p class="md:text-2xl text-xl">聯絡我們</p>
+                    <i class="flex items-center justify-center fi fi-br-arrow-up-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div id="about" class="scroll-mt-35 p-5">
+          <div class="container mx-auto w-full overflow-x-clip">
+            <div class="flex flex-wrap">
+              <div class="lg:w-1/4 w-full lg:mt-20 md:mt-10 mb-5 md:pl-5" data-aos="fade-right">
+                <div class="flex items-center md:justify-start justify-center mb-2">
+                  <span class="inline-block w-2 h-2 rounded-full cj-gre mr-2"></span>
+                  <span class="text-xl font-semibold text-cj-green">About</span>
+                </div>
+                <h2 class="md:pl-4 text-5xl font-black md:text-start text-center">關於創今</h2>
+              </div>
+              <div class="lg:w-1/4 w-full lg:pl-5 mb-5" data-aos="flip-right" data-aos-delay="500">
+                <div class="relative rounded-3xl bg-cj-green p-10 text-white h-full overflow-hidden">
+                  <p class="relative z-2 tracking-wide">創今工程行成立於 2023 年 10 月，是專業的大型設備拆除與工程退場服務公司。我們專注於工廠大型設備、公用建設大型機具等高難度拆除作業，提供安全、高效率、可控風險的完整拆除方案。</p>
+                  <p class="absolute bottom-5 right-10 z-2 text-5xl font-black text-white mt-2 lg:block hidden">01</p>
+                  <img class="absolute bottom-0 left-0 w-full z-1 mix-blend-multiply opacity-20" src="img/illust-1.svg" alt="" />
+                </div>
+              </div>
+              <div class="lg:w-1/4 w-full lg:pl-5 mb-5" data-aos="flip-right" data-aos-delay="700">
+                <div class="relative rounded-3xl bg-cj-mustard p-10 text-white h-full overflow-hidden">
+                  <p class="relative z-2">公司核心團隊由具備數十年經驗的拆除工程人員組成，具深厚的現場判斷能力與風險管理能力，精準掌握每項設備結構特性，確保在複雜環境中仍以最安全方式完成任務。從作業規劃、現場評估、吊掛移除到廢棄物清運，我們皆以專業流程管理與嚴格安全標準執行每一步。</p>
+                  <p class="absolute bottom-5 right-10 z-2 text-5xl font-black text-white mt-2 lg:block hidden">02</p>
+                  <img class="absolute bottom-0 left-0 w-full z-1 mix-blend-multiply opacity-20" src="img/illust-1.svg" alt="" />
+                </div>
+              </div>
+              <div class="lg:w-1/4 w-full lg:pl-5 md:mb-5" data-aos="flip-right" data-aos-delay="900">
+                <div class="relative rounded-3xl bg-cj-purple p-10 text-white h-full overflow-hidden">
+                  <p class="relative z-2">創今工程行秉持「安全至上、效率為先、專業可靠」的理念，致力為各類工廠、公用建設、企業單位提供最值得信賴的拆除服務。我們以多年技術與實務經驗，協助客戶快速完成退場與設備更新需求，是您進行大型設備拆除的首選合作夥伴。</p>
+                  <p class="absolute bottom-5 right-10 z-2 text-5xl font-black text-white mt-2 lg:block hidden">03</p>
+                  <img class="absolute bottom-0 left-0 w-full z-1 mix-blend-multiply opacity-20" src="img/illust-1.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="p-5">
+          <div class="container mx-auto rounded-3xl w-full h-full bg-gray-100 overflow-hidden" data-aos="fade-up">
+            <div class="flex flex-wrap pt-15 p-10">
+              <div class="w-full mb-10" data-aos="flip-up" data-aos-delay="500">
+                <div class="flex items-center justify-center mb-2">
+                  <span class="inline-block w-2 h-2 rounded-full cj-pur mr-2"></span>
+                  <span class="text-xl font-semibold text-cj-purple">Project Achievements</span>
+                </div>
+                <h2 class="text-5xl font-black text-center">工程實績</h2>
+              </div>
+              <div class="w-full flex flex-wrap items-center lg:px-30 md:px-10" data-aos="flip-down" data-aos-delay="500">
+                <div class="md:w-2/3 w-full lg:pr-10 md:pr-5 mb-5">
+                  <p class="tracking-wide">從工廠設備到公用建設，我們累積了多項高難度拆除經驗。每一個案場皆以最高標準執行，確保安全、高效、可靠的成果。</p>
+                </div>
+                <div class="md:w-1/3 w-full flex md:justify-end justify-center mb-5">
+                  <a href="projects.html" class="w-fit flex items-center justify-center gap-5 py-3 md:px-10 px-8 bg-white border-2 border-cj-mustard rounded-full transform duration-150 text-cj-mustard hover:text-white hover:scale-105 hover:bg-cj-mustard">
+                    <p class="md:text-2xl text-xl">more</p>
+                    <i class="flex items-center justify-center fi fi-br-arrow-up-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="mb-15 w-full object-center" data-aos="fade-up">
+              <img src="img/project-01.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="bg-gray-800 mt-20 relative">
+        <div class="absolute z-1 top-0 left-0 inset-0 bg-contain bg-center mix-blend-overlay" style="background-image: url(img/102553328_s.jpg)"></div>
+        <div class="relative z-2 container mx-auto">
+          <div class="flex flex-wrap p-5 py-10">
+            <div class="md:w-1/3 w-full text-white md:mb-0 mb-10">
+              <div class="w-40 md:mx-0 mx-auto">
+                <img class="mb-5" src="img/logo.png" alt="" />
+              </div>
+              <p class="md:pl-3 md:text-2xl font-black md:text-start text-center">
+                <span class="text-cj-green">安全至上</span>、 <span class="text-cj-mustard">效率為先</span>、
+                <span class="text-cj-purple">專業可靠</span>
+              </p>
+            </div>
+            <div class="md:w-1/3 w-full text-white md:pl-5">
+              <p class="md:pl-3 text-2xl font-black mb-5">聯絡方式</p>
+              <p class="md:pl-10 mb-2">電話：0966-621-178</p>
+              <p class="md:pl-10 mb-2">電郵：fchun52@gmail.com</p>
+              <p class="md:pl-10">地址：桃園市龜山區東萬壽路50號9樓</p>
+            </div>
+            <div class="lg:w-55 md:w-50 w-full pl-20 text-white md:block hidden">
+              <img src="img/LINE_QR-Code.jpg" alt="" />
+            </div>
+          </div>
+          <div class="w-full mx-auto pb-2">
+            <div class="px-5 pb-2">
+              <span class="block w-full h-px bg-gray-400"></span>
+            </div>
+            <p class="text-gray-400 text-sm text-center">Copyright © 2025 創今工程. Design by <a class="font-semibold hover:text-cj-purple" href="https://www.ozchamp.com./">OZCHAMP</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- alpine.js -->
+    <script src="js/alpinejs3.12.3.js"></script>
+    <!-- jquery.js -->
+    <script src="js/jquery.js"></script>
+    <!-- main -->
+    <script src="js/main.js"></script>
+    <!-- aos -->
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        duration: 1000,
+        easing: "ease",
+        anchorPlacement: "top-bottom"
+      });
+    </script>
+    <!-- swiper.js -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".pro-swiper", {
+        loop: true,
+        autoplay: {
+          delay: 2000
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        },
+        navigation: {
+          nextEl: ".btn-next",
+          prevEl: ".btn-prev"
+        },
+        slidesPerView: 1,
+        spaceBetween: 10,
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 0
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 20
+          },
+          1280: {
+            slidesPerView: 4,
+            spaceBetween: 20
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
